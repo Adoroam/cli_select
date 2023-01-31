@@ -2,17 +2,21 @@
   "name": "@utility_belt/cli_select",
   "version": "1.0.0",
   "description": "tool for retrieving user CLI select data",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "ts-node index.ts",
+    "build": "rm -r dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Ado",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^18.11.18",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
   }
 }
