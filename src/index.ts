@@ -19,9 +19,9 @@ const colorfn = (str, colorName = 'yellow') => {
     yellow: 33,
     blue: 34,
     green: 32,
-    cyan: 35,
+    magenta: 35,
     red: 31,
-    magenta: 36,
+    cyan: 36,
   }
   const start = `\x1b[${colors[colorName]}m`
   const stop = `\x1b[${colors.reset}m\x1b[0m`
